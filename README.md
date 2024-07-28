@@ -47,7 +47,7 @@ Or add the following to your build.gradle if you are using Gradle:
 implementation 'io.getunleash:springboot-unleash-starter:1.1.0'
 ```
 
-### Step 2: Configuaration
+### Step 2: Configuration
 Add this to your application.yml file and remeber to replace with your configuaration
 ```yaml
 io:
@@ -62,7 +62,7 @@ io:
 ### Step 3: Create Feature Flags
 Define feature flags in the Unleash dashboard. For this example, create two feature flags, hello-flag and hi-flag. Here is image how dashboard look like: 
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](src/main/resources/static/unleash-dashboard.png)
 
 
 ### Step 4: Create Service
