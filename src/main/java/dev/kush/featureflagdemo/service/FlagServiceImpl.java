@@ -3,10 +3,11 @@ package dev.kush.featureflagdemo.service;
 import dev.kush.featureflagdemo.constant.FlagConstant;
 import dev.kush.featureflagdemo.exception.FlagException;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 
 @Service("flagService")
-@Qualifier
+@Primary
 public class FlagServiceImpl implements FlagService {
 
     @Override
