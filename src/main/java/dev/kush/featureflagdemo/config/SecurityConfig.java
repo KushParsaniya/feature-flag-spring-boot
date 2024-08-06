@@ -20,7 +20,7 @@ public class SecurityConfig {
                 .authorities("beta")
                 .build();
 
-        UserDetails u2 = User.withUsername("abhi")
+        UserDetails u2 = User.withUsername("abcd")
                 .password("1234")
                 .authorities("stable")
                 .build();

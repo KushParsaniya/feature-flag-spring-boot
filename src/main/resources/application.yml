@@ -10,7 +10,7 @@ io:
   getunleash:
     app-name: feature-flag-demo
     instance-id: instance 0
-    api-url: http://localhost:4242/api/
+    api-url: http://${UNLEASH_IP}:4242/api/
     environment: development
     api-token: default:development.unleash-insecure-api-token
 
