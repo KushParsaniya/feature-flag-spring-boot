@@ -1,7 +1,5 @@
 package dev.kush.featureflagdemo.exception;
 
-import dev.kush.featureflagdemo.service.FlagService;
-
 public class FlagException extends RuntimeException {
 
     public FlagException() {
