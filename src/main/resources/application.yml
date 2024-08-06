@@ -1,6 +1,10 @@
 spring:
   application:
     name: feature-flag-demo
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
 
 io:
   getunleash:
@@ -9,3 +13,4 @@ io:
     api-url: http://localhost:4242/api/
     environment: development
     api-token: default:development.unleash-insecure-api-token
+
