@@ -4,6 +4,7 @@ import dev.kush.featureflagdemo.constant.FlagConstant;
 import io.getunleash.Unleash;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class ViewController {
@@ -15,11 +16,11 @@ public class ViewController {
     }
 
     @GetMapping("/")
-    public String getHomeView() {
+    public ModelAndView getHomeView() {
         if (unleash.isEnabled(FlagConstant.HOME_VIEW_FLAG)) {
-            return "home-new";
+            return new ModelAndView("home-new");
         } else {
-            return "home";
+            return new ModelAndView("home");
         }
     }
 }
